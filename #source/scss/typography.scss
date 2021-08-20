@@ -1,0 +1,100 @@
+
+.typography-wrapper {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.typography {
+	&__header {
+		background: #E6EEFF;
+		padding: 22px 0px 21px 95px;
+		display: flex;
+		p{
+			font-weight: 600;
+			font-size: 16px;
+			&:first-child{
+				margin:0px 30px 0px 0px;
+				width: 255px;
+			}
+			&:nth-child(2){
+				margin:0px 24px 0px 0px;
+			}
+			&:nth-child(3){
+				margin: 0px 100px 0px 0px;
+			}
+		}
+	}
+	&__content {
+			display: flex;
+			margin:0px 80px;
+			border-bottom:1px solid rgba(0, 82, 255, 0.16);;
+			padding:48px 15px;
+			&:nth-child(2){
+				padding: 80px 15px 48px 15px;
+			}
+			&:last-child{
+				padding: 48px 15px 50px 15px;
+			}
+	}
+	&__text {
+		font-size: 16px;
+		&:first-child{
+			min-width: 255px;
+			margin: 0px 30px 0px 0px;
+		}
+		&:nth-child(2){
+			margin: 0px 54px 0px 0px;
+		}
+		&:nth-child(3){
+			margin: 0px 150px 0px 0px;
+		}
+	}
+	.p1{
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.p2{
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.p3{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.p4{
+		font-size: 14px;
+		line-height: 22px;
+	}
+	h1,h2,h3,h4,h5,h6{
+		font-family: Inter;
+		font-weight: 600;
+		color:#00194C;
+	}
+	h1{
+		font-size: 32px;
+		line-height: 42px;
+	}
+	h2{
+		font-size: 28px;
+		line-height: 36px;
+	}
+	h3{
+		font-size: 22px;
+		line-height: 30px;
+	}
+	h4{
+		font-size: 20px;
+		line-height: 28px;
+	}
+	h5{
+		font-size: 18px;
+		line-height: 26px;
+	}
+	h6{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	p{
+		color:#00194C;
+		font-family: Inter;
+	}
+}

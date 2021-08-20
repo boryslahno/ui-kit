@@ -1,0 +1,146 @@
+
+.inputs-wrapper {
+	max-width: 864px;
+	margin:0 auto;
+	padding: 40px 0px 40px 0px;
+}
+
+.inputs {
+	margin:0px 0px 40px 0px;
+	&__caption {
+
+	}
+	&__header {
+		display: flex;
+		padding: 22px 32px 21px 32px;
+		p{
+			&:first-child{
+				min-width: 255px;
+				margin:0px 30px 0px 0px;
+			}
+			&:nth-child(2){
+				margin:0px 126px 0px 0px;
+			}
+		}
+	}
+	&__content {
+		display: flex;
+		align-items:center;
+		border-bottom: 1px solid rgba(0, 82, 255, 0.16);
+		margin: 0px 32px 0px 22px;
+		padding:32px 10px 32px 10px;
+	}
+	&__style {
+		min-width: 255px;
+		margin:0px 30px 0px 0px;
+	}
+	&__state {
+		min-width: 157px;
+	}
+	&__sample {
+
+		p{
+			display: none;
+			margin:8px 0px 0px 0px;
+		}
+		input{
+			border: 1px solid #BDBDBD;
+			padding: 0px 0px 0px 16px;
+			&::placeholder{
+				color: #BDBDBD;
+			}
+		}
+		svg{
+			color: #BDBDBD;
+		}
+		&_hover{
+			input:hover{
+				border:1px solid #0052FF;
+			}
+		}
+
+		&_focus{
+			input:focus{
+				border:1px solid #0052FF;
+			}
+		}
+		&_pressed{
+			input:active{
+				border:1px solid #0052FF;
+				&::placeholder{
+					color: #00194C;
+				}
+				&+svg{
+					color: #00194C;
+				}
+			}
+		}
+		&_error{
+			input:invalid{
+				border: 1px solid #FF3434;
+				&::placeholder{
+					color: #FF3434;
+				}
+			}
+			p{
+				display: block;
+				color: #FF3434;
+			}
+			svg{
+				color: #FF3434;
+			}
+		}
+		&_success{
+			input:valid{
+				border: 1px solid #53D86A;
+				&::placeholder{
+					color: #53D86A;
+				}
+			}
+			svg{
+				color: #53D86A;
+			}
+		}
+		&_info{
+			input:required{
+				border: 1px solid #FFCB2F;
+				&::placeholder{
+					color: #FFCB2F;
+				}
+			}
+			p{
+				display: block;
+				color: #FFCB2F;
+			}
+			svg{
+				color: #FFCB2F;
+			}
+		}
+		&_disabled{
+			input:disabled{
+				border:none;
+				background: #F2F2F2;
+			}
+		}
+
+		&_left-icon{
+			position: relative;
+			input{
+				padding: 0px 0px 0px 52px;
+			}
+			svg{
+				position: absolute;
+				left:22px;
+				top: 16px;
+			}
+		}
+		&_right-icon{
+			position: relative;
+			svg{
+				position: absolute;
+				right: 19px;
+				top: 14px;
+			}
+		}
+	}
+}

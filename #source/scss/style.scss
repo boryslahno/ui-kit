@@ -1,0 +1,45 @@
+
+@import "clear_style.scss";
+@import "commons.scss";
+@import "colors.scss";
+@import "shadows.scss";
+@import "typography.scss";
+@import "buttons.scss";
+@import "inputs.scss";
+@import "radioAndSwitch.scss";
+@import "dropdown.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+/*@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter-Regular.eot');
+	src: local('☺'), url('../fonts/Inter-Regular.woff') format('woff'), url('../fonts/Inter-Regular.ttf') format('truetype'), url('../fonts/Inter-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}*/
+
+.ui-navigation {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	&__menu {
+		display: flex;
+		li{
+			margin:0px 30px 0px 0px;
+			&:last-child{
+				margin:0;
+			}
+		}
+	}
+	&__link {
+		font-size:35px;
+		font-weight: 700;
+		color:#0052FF;
+		&:hover{
+			color:#FE9526;
+		}
+	}
+}

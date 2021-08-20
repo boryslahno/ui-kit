@@ -1,0 +1,124 @@
+
+.buttons-wrapper {
+	max-width: 715px;
+	margin:0 auto;
+	padding: 40px 0px 0px 0px;
+}
+.btn {
+	width: 131px;
+	height: 48px;
+	border-radius: 4px;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	&_left-icon{
+		width: 159px;
+		svg{
+			margin:0px 11px 0px 0px;
+		}
+	}
+	&_right-icon{
+		width: 159px;
+		svg{
+			margin:0px 0px 0px 11px;
+		}
+	}
+}
+.buttons {
+	font-size: 16px;
+	margin: 0px 0px 40px 0px;
+	&__caption {
+		
+	}
+	&__header {
+		display: flex;
+		padding: 22px 32px 21px 32px;
+		p{
+			&:first-child{
+				width: 255px;
+				margin:0px 30px 0px 0px;
+			}
+			&:nth-child(2){
+				margin:0px 140px 0px 0px;
+			}
+		}
+	}
+	&__content {
+		display: flex;
+		align-items:center;
+		border-bottom: 1px solid rgba(0, 82, 255, 0.16);
+		margin: 0px 32px 0px 22px;
+		padding:32px 10px 32px 10px;
+	}
+	&__style {
+		min-width: 255px;
+		margin:0px 30px 0px 0px;
+	}
+	&__state {
+		min-width: 172px;
+	}
+	&__button {
+		font-size: 16px;
+		&_primary {
+			background-color:#0052FF;
+			color: #FFF;
+			&_hover{
+				&:hover{
+					background-color: #4D86FF;
+				}
+			}
+			&_focus{
+				&:focus{
+					background-color: #4D86FF;
+				}
+			}
+			&_pressed{
+				&:active{
+					background-color: #80A9FF;
+				}
+			}
+			&_disabled{
+				&:disabled{
+					background-color: rgba(0, 82, 255, 0.08);
+					color:#80A9FF;
+				}
+
+			}
+		}
+
+		&_ghost {
+			background-color:#FFFFFF;
+			border: 1px solid #0052FF;
+			color: #0052FF;
+			&_hover{
+				&:hover{
+					background-color: #E6EEFF;
+				}
+			}
+			&_focus{
+				&:focus{
+					background-color: #E6EEFF;
+				}
+			}
+			&_pressed{
+				&:active{
+					border: 1px solid #0039B3;
+					color:#0039B3;
+				}
+			}
+			&_disabled{
+				&:disabled{
+					border: 1px solid #B3CBFF;
+					color: #B3CBFF;
+				}
+
+			}
+			&_left-icon{
+				width: 159px;
+				svg{
+					margin:0px 11px 0px 0px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,140 @@
+
+.control-wrapper {
+	background-color: #E5E5E5;
+	max-width: 400px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+.controls {
+	input{
+		display: none;
+	}
+	&__checkbox {
+		margin:0px 0px 32px 0px;
+		label{
+			margin:0px 16px 0px 0px;
+			&:last-child{
+				margin:0px 0px 0px 0px;
+			}
+			&::before{
+				content: "";
+				display: inline-block;
+				width: 24px;
+				height: 24px;
+				background-color: #FFFFFF;
+				border: 1px solid #0052FF;
+				border-radius: 4px;
+				transition: background-color 0.5s ease 0s;
+			}
+		}
+		input{
+			&:disabled{
+				&+label{
+					&::before{
+						border:1px solid #E6EEFF;
+					}
+				}
+			}
+			&:checked{
+				&+label{
+					&::before{
+						background: #0052FF url('../img/Checkbox/Vector.png') center no-repeat;
+					}
+				}
+			}
+		}
+	}
+	&__radio{
+		margin:0px 0px 32px 0px;
+		label{
+			position: relative;
+			margin:0px 16px 0px 0px;
+			&:last-child{
+				margin:0px 0px 0px 0px;
+			}
+			&::before{
+				content: "";
+				display: inline-flex;
+				width: 24px;
+				height: 24px;
+				background: #FFFFFF;
+				border: 2px solid #0052FF;
+				border-radius: 50%;
+			}
+			&::after{
+				content: "";
+				position: absolute;
+				left: 5px;
+				bottom: 6px;
+				width: 14px;
+				height: 14px;
+				background-color: #0052FF;
+				border-radius: 50%;
+				transform: scale(0);
+				transition: transform 0.5s ease 0s;
+			}
+		}
+		input{
+			&:disabled{
+				&+label{
+					&::before{
+						border:2px solid #E6EEFF;
+					}
+				}
+			}
+			&:checked{
+				&+label{
+					&::before{
+						background-color: transparent;
+					}
+					&::after{
+						transform: scale(1);
+					}
+				}
+			}
+		}
+	}
+	&__switch{
+
+		label{
+			position: relative;
+			margin:0px 16px 0px -2px;
+			&:last-child{
+				margin:0;
+			}
+			&::before{
+				content: "";
+				display: inline-block;
+				width: 48px;
+				height: 28px;
+				background-color: #FFFFFF;
+				border-radius: 14px;
+			}
+			&::after{
+				content: "";
+				position: absolute;
+				bottom: 5px;
+				left: 2px;
+				width: 24px;
+				height: 24px;
+				background-color: #E6EEFF;
+				border-radius: 50%;
+				transition: all 0.5s ease 0s;
+			}
+		}
+		input{
+			&:checked{
+				&+label{
+					&::after{
+						background-color: #0052FF;
+						left: 22px;
+					}
+				}
+			}
+		}
+	}
+}
